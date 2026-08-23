@@ -20,7 +20,9 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.thedesolate.init.TheDesolateModTabs;
 import net.mcreator.thedesolate.init.TheDesolateModItems;
+import net.mcreator.thedesolate.init.TheDesolateModEntities;
 import net.mcreator.thedesolate.init.TheDesolateModBlocks;
 
 import javax.annotation.Nullable;
@@ -51,6 +53,8 @@ public class TheDesolateMod {
 		modEventBus.addListener(this::registerNetworking);
 		TheDesolateModBlocks.REGISTRY.register(modEventBus);
 		TheDesolateModItems.REGISTRY.register(modEventBus);
+		TheDesolateModEntities.REGISTRY.register(modEventBus);
+		TheDesolateModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

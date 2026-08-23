@@ -26,6 +26,22 @@
           "src/main/resources/assets/the_desolate/models/block/cockblock.json"
         ]
       }
+    },
+    {
+      "name": "Evilverity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evilverity",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_desolate/items/evilverity_spawn_egg.json",
+          "src/main/java/net/mcreator/thedesolate/entity/EvilverityEntity.java",
+          "src/main/resources/data/the_desolate/neoforge/biome_modifier/evilverity_biome_modifier.json",
+          "src/main/java/net/mcreator/thedesolate/client/renderer/EvilverityRenderer.java",
+          "src/main/resources/assets/the_desolate/models/item/evilverity_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -35,14 +51,20 @@
   "language_map": {
     "en_us": {
       "item_group.the_desolate.desolate": "Desolate",
-      "item.the_desolate.cockblock": "Cockblock"
+      "item.the_desolate.cockblock": "Cockblock",
+      "entity.the_desolate.evilverity": "Evilverity",
+      "item.the_desolate.evilverity_spawn_egg": "Evilverity Spawn Egg"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModBlocks.java",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModItems.java",
+      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModEntityRenderers.java",
+      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModEntities.java",
       "src/main/java/net/mcreator/thedesolate/TheDesolateMod.java",
+      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModModels.java",
+      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModTabs.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
     ]

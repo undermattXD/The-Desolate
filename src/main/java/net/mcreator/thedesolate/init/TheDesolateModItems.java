@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
@@ -18,8 +19,10 @@ import java.util.function.Function;
 public class TheDesolateModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(TheDesolateMod.MODID);
 	public static final DeferredItem<Item> COCKBLOCK;
+	public static final DeferredItem<Item> EVILVERITY_SPAWN_EGG;
 	static {
 		COCKBLOCK = block(TheDesolateModBlocks.COCKBLOCK);
+		EVILVERITY_SPAWN_EGG = register("evilverity_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(TheDesolateModEntities.EVILVERITY.get())));
 	}
 
 	// Start of user code block custom items
