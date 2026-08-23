@@ -20,9 +20,11 @@ public class TheDesolateModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(TheDesolateMod.MODID);
 	public static final DeferredItem<Item> COCKBLOCK;
 	public static final DeferredItem<Item> EVILVERITY_SPAWN_EGG;
+	public static final DeferredItem<Item> PENISBLOCK;
 	static {
 		COCKBLOCK = block(TheDesolateModBlocks.COCKBLOCK);
 		EVILVERITY_SPAWN_EGG = register("evilverity_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(TheDesolateModEntities.EVILVERITY.get())));
+		PENISBLOCK = block(TheDesolateModBlocks.PENISBLOCK);
 	}
 
 	// Start of user code block custom items

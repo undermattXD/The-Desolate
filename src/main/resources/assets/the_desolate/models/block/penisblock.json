@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/brown_mushroom_block",
+    "up": "minecraft:block/azure_bluet",
+    "north": "minecraft:block/birch_planks",
+    "east": "minecraft:block/birch_log",
+    "south": "minecraft:block/chorus_flower",
+    "west": "minecraft:block/cherry_planks",
+    "particle": "minecraft:block/brown_mushroom_block"
+  }
+}

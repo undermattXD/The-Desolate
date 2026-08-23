@@ -17,8 +17,10 @@ import java.util.function.Function;
 public class TheDesolateModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(TheDesolateMod.MODID);
 	public static final DeferredBlock<Block> COCKBLOCK;
+	public static final DeferredBlock<Block> PENISBLOCK;
 	static {
 		COCKBLOCK = register("cockblock", CockblockBlock::new);
+		PENISBLOCK = register("penisblock", PenisblockBlock::new);
 	}
 
 	// Start of user code block custom blocks
