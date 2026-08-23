@@ -1,11 +1,31 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Desolate",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desolate",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item_group.the_desolate.desolate": "Desolate"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/thedesolate/TheDesolateMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
   },
   "foldersRoot": {
     "name": "~",
