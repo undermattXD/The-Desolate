@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "the_desolate:evilverity_spawn_egg": 5
+    },
+    "minecraft:killed": {
+      "the_desolate:evilverity": 5
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1992,
+      "minecraft:walk_one_cm": 5822,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 5,
+      "minecraft:play_time": 1992,
+      "minecraft:damage_dealt": 500,
+      "minecraft:jump": 46,
+      "minecraft:time_since_death": 1992,
+      "minecraft:sprint_one_cm": 1650,
+      "minecraft:total_world_time": 2146,
+      "minecraft:fly_one_cm": 11425,
+      "minecraft:crouch_one_cm": 36,
+      "minecraft:sneak_time": 23
+    }
+  },
+  "DataVersion": 4790
+}
