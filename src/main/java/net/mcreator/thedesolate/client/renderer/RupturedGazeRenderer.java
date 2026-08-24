@@ -65,7 +65,7 @@ public class RupturedGazeRenderer extends MobRenderer<RupturedGazeEntity, Living
 			this.root().getAllParts().forEach(ModelPart::resetPose);
 			RupturedGazeEntity entity = state.getRenderData(ENTITY_KEY);
 			this.keyframeAnimation0.apply(entity.animationState0, state.ageInTicks, 1f);
-			this.keyframeAnimation1.apply(entity.animationState1, state.ageInTicks, 1f);
+			this.keyframeAnimation1.applyWalk(state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
 			super.setupAnim(state);
 		}
 	}

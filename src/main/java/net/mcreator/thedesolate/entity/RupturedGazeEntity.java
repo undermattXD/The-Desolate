@@ -20,11 +20,11 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.thedesolate.procedures.RGIdleConditionProcedure;
 import net.mcreator.thedesolate.init.TheDesolateModEntities;
 
 public class RupturedGazeEntity extends Monster {
 	public final AnimationState animationState0 = new AnimationState();
-	public final AnimationState animationState1 = new AnimationState();
 
 	public RupturedGazeEntity(EntityType<RupturedGazeEntity> type, Level world) {
 		super(type, world);
@@ -61,8 +61,7 @@ public class RupturedGazeEntity extends Monster {
 	public void tick() {
 		super.tick();
 		if (this.level().isClientSide()) {
-			this.animationState0.animateWhen(true, this.tickCount);
-			this.animationState1.animateWhen(true, this.tickCount);
+			this.animationState0.animateWhen(RGIdleConditionProcedure.execute(this), this.tickCount);
 		}
 	}
 

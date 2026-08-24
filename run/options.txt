@@ -8,7 +8,7 @@ entityDistanceScaling:1.0
 entityShadows:true
 forceUnicodeFont:false
 japaneseGlyphVariants:false
-fov:1.0
+fov:0.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
@@ -59,7 +59,7 @@ sprintWindow:7
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 hideSplashTexts:false
-mouseSensitivity:0.3362676056338028
+mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
@@ -167,7 +167,7 @@ key_key.debug.profilingChart:key.keyboard.1
 key_key.debug.fpsCharts:key.keyboard.2
 key_key.debug.networkCharts:key.keyboard.3
 key_key.debug.lightmapTexture:key.keyboard.4
-soundCategory_master:1.0
+soundCategory_master:0.0
 soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

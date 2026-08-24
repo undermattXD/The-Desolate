@@ -26,13 +26,14 @@
       {
         "animation": "CUSTOM:RupturedGazeAnimation.Idle",
         "speed": 1.0,
+        "condition": "RGIdleCondition",
         "walking": false,
         "amplitude": 1.0
       },
       {
         "animation": "CUSTOM:RupturedGazeAnimation.Running",
         "speed": 1.0,
-        "walking": false,
+        "walking": true,
         "amplitude": 1.0
       }
     ],
