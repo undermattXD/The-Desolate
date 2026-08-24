@@ -1,0 +1,12 @@
+/execute as @s in the_desolate:wonderland
+/execute as @s in the_desolate:wonderland run tp @s 0 64 0
+/time set day
+/time set 12d
+/time set 12s
+/time set 12t
+/time set 12d
+/time set 1200d
+/reload
+/execute as @s in the_desolate:wonderland run tp @s 0 64 0
+/gamemode spectator
+/execute as @s in the_desolate:wonderland run tp @s 0 64 0

@@ -18,12 +18,12 @@
       "registry_name": "cockblock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thedesolate/block/CockblockBlock.java",
+          "src/main/resources/assets/the_desolate/models/block/cockblock.json",
           "src/main/resources/assets/the_desolate/blockstates/cockblock.json",
-          "src/main/resources/assets/the_desolate/models/item/cockblock.json",
-          "src/main/resources/assets/the_desolate/items/cockblock.json",
           "src/main/resources/data/the_desolate/loot_table/blocks/cockblock.json",
-          "src/main/resources/assets/the_desolate/models/block/cockblock.json"
+          "src/main/resources/assets/the_desolate/models/item/cockblock.json",
+          "src/main/java/net/mcreator/thedesolate/block/CockblockBlock.java",
+          "src/main/resources/assets/the_desolate/items/cockblock.json"
         ]
       }
     },
@@ -35,11 +35,11 @@
       "registry_name": "evilverity",
       "metadata": {
         "files": [
+          "src/main/resources/assets/the_desolate/models/item/evilverity_spawn_egg.json",
           "src/main/resources/assets/the_desolate/items/evilverity_spawn_egg.json",
           "src/main/java/net/mcreator/thedesolate/entity/EvilverityEntity.java",
           "src/main/resources/data/the_desolate/neoforge/biome_modifier/evilverity_biome_modifier.json",
-          "src/main/java/net/mcreator/thedesolate/client/renderer/EvilverityRenderer.java",
-          "src/main/resources/assets/the_desolate/models/item/evilverity_spawn_egg.json"
+          "src/main/java/net/mcreator/thedesolate/client/renderer/EvilverityRenderer.java"
         ]
       }
     },
@@ -59,11 +59,69 @@
           "src/main/resources/data/the_desolate/loot_table/blocks/penisblock.json"
         ]
       }
+    },
+    {
+      "name": "Wonderland",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wonderland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_desolate/dimension_type/wonderland.json",
+          "src/main/resources/data/the_desolate/dimension/wonderland.json",
+          "src/main/resources/data/the_desolate/timeline/wonderland_effects.json"
+        ]
+      }
+    },
+    {
+      "name": "Wonderlandbiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wonderlandbiome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_desolate/worldgen/placed_feature/wonderlandbiome_tree.json",
+          "src/main/resources/data/the_desolate/worldgen/biome/wonderlandbiome.json",
+          "src/main/resources/data/the_desolate/worldgen/configured_feature/wonderlandbiome_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "ForceOld",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "force_old",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thedesolate/ForceOld.java"
+        ]
+      }
+    },
+    {
+      "name": "Wondertree",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wondertree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_desolate/neoforge/biome_modifier/wondertree_biome_modifier.json",
+          "src/main/resources/data/the_desolate/worldgen/placed_feature/wondertree.json",
+          "src/main/resources/data/the_desolate/worldgen/configured_feature/wondertree.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Wonderland@Blocks.GRASS"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
@@ -71,7 +129,8 @@
       "item.the_desolate.cockblock": "Cockblock",
       "entity.the_desolate.evilverity": "Evilverity",
       "item.the_desolate.evilverity_spawn_egg": "Evilverity Spawn Egg",
-      "item.the_desolate.penisblock": "Penisblock"
+      "item.the_desolate.penisblock": "Penisblock",
+      "biome.the_desolate.wonderlandbiome": "Wonderlandbiome"
     }
   },
   "metadata": {
@@ -84,6 +143,7 @@
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModModels.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/thedesolate/TheDesolateMod.java"
     ]
   },

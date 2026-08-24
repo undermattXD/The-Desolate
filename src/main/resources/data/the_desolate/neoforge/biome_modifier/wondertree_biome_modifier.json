@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "the_desolate:wonderlandbiome",
+  "features": "the_desolate:wondertree",
+  "step": "surface_structures"
+}
