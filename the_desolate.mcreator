@@ -89,18 +89,6 @@
       }
     },
     {
-      "name": "ForceOld",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "force_old",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/thedesolate/ForceOld.java"
-        ]
-      }
-    },
-    {
       "name": "Wondertree",
       "type": "feature",
       "compiles": true,
