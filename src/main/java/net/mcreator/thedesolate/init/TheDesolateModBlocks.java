@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.thedesolate.block.WodnerLandPortalBlock;
 import net.mcreator.thedesolate.block.PenisblockBlock;
 import net.mcreator.thedesolate.block.CockblockBlock;
 import net.mcreator.thedesolate.TheDesolateMod;
@@ -19,9 +20,11 @@ public class TheDesolateModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(TheDesolateMod.MODID);
 	public static final DeferredBlock<Block> COCKBLOCK;
 	public static final DeferredBlock<Block> PENISBLOCK;
+	public static final DeferredBlock<Block> WODNER_LAND_PORTAL;
 	static {
 		COCKBLOCK = register("cockblock", CockblockBlock::new);
 		PENISBLOCK = register("penisblock", PenisblockBlock::new);
+		WODNER_LAND_PORTAL = register("wodner_land_portal", WodnerLandPortalBlock::new);
 	}
 
 	// Start of user code block custom blocks

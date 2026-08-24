@@ -113,6 +113,41 @@
           "src/main/resources/data/the_desolate/worldgen/configured_feature/wondertree.json"
         ]
       }
+    },
+    {
+      "name": "WodnerLandPortalEntityCollidesInTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wodner_land_portal_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thedesolate/procedures/WodnerLandPortalEntityCollidesInTheBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WodnerLandPortal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wodner_land_portal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_desolate/models/item/wodner_land_portal.json",
+          "src/main/resources/assets/the_desolate/items/wodner_land_portal.json",
+          "src/main/resources/data/the_desolate/loot_table/blocks/wodner_land_portal.json",
+          "src/main/resources/assets/the_desolate/blockstates/wodner_land_portal.json",
+          "src/main/java/net/mcreator/thedesolate/block/WodnerLandPortalBlock.java",
+          "src/main/resources/assets/the_desolate/models/block/wodner_land_portal.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -130,7 +165,8 @@
       "entity.the_desolate.evilverity": "Evilverity",
       "item.the_desolate.evilverity_spawn_egg": "Evilverity Spawn Egg",
       "item.the_desolate.penisblock": "Penisblock",
-      "biome.the_desolate.wonderlandbiome": "Wonderlandbiome"
+      "biome.the_desolate.wonderlandbiome": "Wonderlandbiome",
+      "item.the_desolate.wodner_land_portal": "Wonderland Portal Block"
     }
   },
   "metadata": {

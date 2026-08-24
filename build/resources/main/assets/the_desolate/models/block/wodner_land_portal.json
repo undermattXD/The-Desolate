@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_desolate:block/white",
+    "up": "the_desolate:block/white",
+    "north": "the_desolate:block/white",
+    "east": "the_desolate:block/white",
+    "south": "the_desolate:block/white",
+    "west": "the_desolate:block/white",
+    "particle": "the_desolate:block/white"
+  }
+}
