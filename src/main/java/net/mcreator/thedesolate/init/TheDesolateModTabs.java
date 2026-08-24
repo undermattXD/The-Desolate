@@ -30,6 +30,7 @@ public class TheDesolateModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(TheDesolateModItems.EVILVERITY_SPAWN_EGG.get());
+			tabData.accept(TheDesolateModItems.RUPTURED_GAZE_SPAWN_EGG.get());
 		}
 	}
 }

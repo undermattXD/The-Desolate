@@ -22,11 +22,13 @@ public class TheDesolateModItems {
 	public static final DeferredItem<Item> EVILVERITY_SPAWN_EGG;
 	public static final DeferredItem<Item> PENISBLOCK;
 	public static final DeferredItem<Item> WODNER_LAND_PORTAL;
+	public static final DeferredItem<Item> RUPTURED_GAZE_SPAWN_EGG;
 	static {
 		COCKBLOCK = block(TheDesolateModBlocks.COCKBLOCK);
 		EVILVERITY_SPAWN_EGG = register("evilverity_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(TheDesolateModEntities.EVILVERITY.get())));
 		PENISBLOCK = block(TheDesolateModBlocks.PENISBLOCK);
 		WODNER_LAND_PORTAL = block(TheDesolateModBlocks.WODNER_LAND_PORTAL);
+		RUPTURED_GAZE_SPAWN_EGG = register("ruptured_gaze_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(TheDesolateModEntities.RUPTURED_GAZE.get())));
 	}
 
 	// Start of user code block custom items

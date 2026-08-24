@@ -13,3 +13,4 @@
 /execute as @s in minecraft:overworld run tp @s 0 64 0
 /clear
 /execute as @s in the_desolate:wonderland run tp @s 0 64 0
+/kill @s

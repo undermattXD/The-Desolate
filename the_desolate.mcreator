@@ -136,6 +136,42 @@
           "src/main/resources/assets/the_desolate/models/block/wodner_land_portal.json"
         ]
       }
+    },
+    {
+      "name": "RupturedGaze",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruptured_gaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_desolate/neoforge/biome_modifier/ruptured_gaze_biome_modifier.json",
+          "src/main/resources/assets/the_desolate/models/item/ruptured_gaze_spawn_egg.json",
+          "src/main/resources/assets/the_desolate/items/ruptured_gaze_spawn_egg.json",
+          "src/main/java/net/mcreator/thedesolate/entity/RupturedGazeEntity.java",
+          "src/main/java/net/mcreator/thedesolate/client/renderer/RupturedGazeRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "RGIdleCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rg_idle_condition",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/thedesolate/procedures/RGIdleConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RGRunningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rg_running_condition"
     }
   ],
   "variable_elements": [],
@@ -154,7 +190,9 @@
       "item.the_desolate.evilverity_spawn_egg": "Evilverity Spawn Egg",
       "item.the_desolate.penisblock": "Penisblock",
       "biome.the_desolate.wonderlandbiome": "Wonderlandbiome",
-      "item.the_desolate.wodner_land_portal": "Wonderland Portal Block"
+      "item.the_desolate.wodner_land_portal": "Wonderland Portal Block",
+      "entity.the_desolate.ruptured_gaze": "Ruptured Gaze",
+      "item.the_desolate.ruptured_gaze_spawn_egg": "Ruptured Gaze Spawn Egg"
     }
   },
   "metadata": {

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/bee_nest_front_honey",
+    "up": "minecraft:block/birch_trapdoor",
+    "north": "minecraft:block/acacia_log_top",
+    "east": "minecraft:block/birch_trapdoor",
+    "south": "minecraft:block/birch_trapdoor",
+    "west": "minecraft:block/birch_trapdoor",
+    "particle": "minecraft:block/bee_nest_front_honey"
+  }
+}

@@ -17,6 +17,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.thedesolate.entity.RupturedGazeEntity;
 import net.mcreator.thedesolate.entity.EvilverityEntity;
 import net.mcreator.thedesolate.TheDesolateMod;
 
@@ -25,6 +26,10 @@ public class TheDesolateModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, TheDesolateMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<EvilverityEntity>> EVILVERITY = register("evilverity",
 			EntityType.Builder.<EvilverityEntity>of(EvilverityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.notInPeaceful().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RupturedGazeEntity>> RUPTURED_GAZE = register("ruptured_gaze",
+			EntityType.Builder.<RupturedGazeEntity>of(RupturedGazeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.notInPeaceful().sized(0.6f, 1.8f));
 
@@ -37,10 +42,12 @@ public class TheDesolateModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		EvilverityEntity.init(event);
+		RupturedGazeEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(EVILVERITY.get(), EvilverityEntity.createAttributes().build());
+		event.put(RUPTURED_GAZE.get(), RupturedGazeEntity.createAttributes().build());
 	}
 }

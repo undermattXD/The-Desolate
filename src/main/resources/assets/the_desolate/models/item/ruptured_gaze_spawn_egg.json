@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "the_desolate:item/ruptured_gaze_spawn_egg_generated"
+  }
+}
