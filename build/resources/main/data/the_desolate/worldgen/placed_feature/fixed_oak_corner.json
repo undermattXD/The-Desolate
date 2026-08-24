@@ -1,7 +1,0 @@
-{
-  "feature": "the_desolate:fixed_oak",
-  "placement": [
-    { "type": "minecraft:heightmap", "heightmap": "WORLD_SURFACE_WG" },
-    { "type": "minecraft:biome" }
-  ]
-}
