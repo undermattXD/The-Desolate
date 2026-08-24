@@ -9,7 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 
 @EventBusSubscriber(
-        modid = "indomitable",
+        modid = "the_desolate",
         value = Dist.CLIENT
 )
 public class ForceOld {
@@ -19,7 +19,7 @@ public class ForceOld {
         if (event.getPackType() != PackType.CLIENT_RESOURCES) return;
 
         event.addPackFinders(
-                Identifier.fromNamespaceAndPath("indomitable", "resourcepacks/myresourcepack"),
+                Identifier.fromNamespaceAndPath("the_desolate", "resourcepacks/myresourcepack"),
                 PackType.CLIENT_RESOURCES,
                 Component.literal("nostalgia pack"),
                 net.minecraft.server.packs.repository.PackSource.BUILT_IN,

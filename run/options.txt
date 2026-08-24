@@ -64,7 +64,7 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:["vanilla","mod_resources"]
+resourcePacks:["vanilla","mod_resources","mod/the_desolate:resourcepacks/myresourcepack"]
 incompatibleResourcePacks:[]
 lastServer:localhost:25463
 lang:en_us
