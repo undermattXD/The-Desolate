@@ -24,13 +24,13 @@ public class TheDesolateModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DESOLATE = REGISTRY.register("desolate",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_desolate.desolate")).icon(() -> new ItemStack(Blocks.POLISHED_BLACKSTONE)).displayItems((parameters, tabData) -> {
 				tabData.accept(TheDesolateModBlocks.WODNER_LAND_PORTAL.get().asItem());
+				tabData.accept(TheDesolateModItems.RUPTURED_GAZE_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(TheDesolateModItems.EVILVERITY_SPAWN_EGG.get());
-			tabData.accept(TheDesolateModItems.RUPTURED_GAZE_SPAWN_EGG.get());
 		}
 	}
 }

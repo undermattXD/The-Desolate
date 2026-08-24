@@ -50,9 +50,9 @@
       "value": -1,
       "falpha": 0.0
     },
-    "spawnEggTexture": "",
+    "spawnEggTexture": "rapturedegg",
     "creativeTabs": [
-      "MISC"
+      "CUSTOM:Desolate"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
