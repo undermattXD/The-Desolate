@@ -171,7 +171,13 @@
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rg_running_condition"
+      "registry_name": "rg_running_condition",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/thedesolate/procedures/RGRunningConditionProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
