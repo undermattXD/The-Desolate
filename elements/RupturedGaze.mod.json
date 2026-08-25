@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Ruptured Gaze",
     "mobLabel": "",
-    "mobModelName": "ModelRupturedGaze",
+    "mobModelName": "ModelRupturedGazeV2",
     "mobModelTexture": "texture.png",
     "transparentModelCondition": {
       "fixedValue": false

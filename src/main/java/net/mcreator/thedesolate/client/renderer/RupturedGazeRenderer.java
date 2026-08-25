@@ -16,15 +16,15 @@ import net.minecraft.client.animation.AnimationDefinition;
 
 import net.mcreator.thedesolate.entity.RupturedGazeEntity;
 import net.mcreator.thedesolate.client.model.animations.RupturedGazeAnimation;
-import net.mcreator.thedesolate.client.model.ModelRupturedGaze;
+import net.mcreator.thedesolate.client.model.ModelRupturedGazeV2;
 
 import java.util.Map;
 
-public class RupturedGazeRenderer extends MobRenderer<RupturedGazeEntity, LivingEntityRenderState, ModelRupturedGaze> {
+public class RupturedGazeRenderer extends MobRenderer<RupturedGazeEntity, LivingEntityRenderState, ModelRupturedGazeV2> {
 	private final Identifier entityTexture = Identifier.parse("the_desolate:textures/entities/texture.png");
 
 	public RupturedGazeRenderer(EntityRendererProvider.Context context) {
-		super(context, new AnimatedModel(context.bakeLayer(ModelRupturedGaze.LAYER_LOCATION)), 0.5f);
+		super(context, new AnimatedModel(context.bakeLayer(ModelRupturedGazeV2.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class RupturedGazeRenderer extends MobRenderer<RupturedGazeEntity, Living
 		return entityTexture;
 	}
 
-	private static final class AnimatedModel extends ModelRupturedGaze {
+	private static final class AnimatedModel extends ModelRupturedGazeV2 {
 		private final KeyframeAnimation keyframeAnimation0;
 		private final KeyframeAnimation keyframeAnimation1;
 

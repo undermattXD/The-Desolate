@@ -145,11 +145,11 @@
       "registry_name": "ruptured_gaze",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/thedesolate/client/renderer/RupturedGazeRenderer.java",
-          "src/main/java/net/mcreator/thedesolate/entity/RupturedGazeEntity.java",
           "src/main/resources/data/the_desolate/neoforge/biome_modifier/ruptured_gaze_biome_modifier.json",
+          "src/main/resources/assets/the_desolate/models/item/ruptured_gaze_spawn_egg.json",
           "src/main/resources/assets/the_desolate/items/ruptured_gaze_spawn_egg.json",
-          "src/main/resources/assets/the_desolate/models/item/ruptured_gaze_spawn_egg.json"
+          "src/main/java/net/mcreator/thedesolate/entity/RupturedGazeEntity.java",
+          "src/main/java/net/mcreator/thedesolate/client/renderer/RupturedGazeRenderer.java"
         ]
       }
     },
@@ -213,12 +213,12 @@
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModItems.java",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModEntityRenderers.java",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModEntities.java",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/thedesolate/TheDesolateMod.java",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModModels.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModTabs.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/thedesolate/TheDesolateMod.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
