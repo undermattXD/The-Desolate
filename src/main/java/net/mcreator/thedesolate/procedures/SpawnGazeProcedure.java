@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.EntitySpawnReason;
@@ -33,9 +34,12 @@ public class SpawnGazeProcedure {
 			return;
 		if (!(world instanceof Level _lvl0 && _lvl0.isBrightOutside())) {
 			if (TheDesolateModVariables.MapVariables.get(world).Has_Gaze_sapwned_tonight == false) {
-				if (Math.random() <= 0.0001) {
+				if (Math.random() <= 1) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = TheDesolateModEntities.RUPTURED_GAZE.get().spawn(_level, BlockPos.containing(entity.getX() + entity.getLookAngle().x * (-15), entity.getY(), entity.getZ() + entity.getLookAngle().z * (-15)),
+						Entity entityToSpawn = TheDesolateModEntities.RUPTURED_GAZE.get().spawn(_level,
+								BlockPos.containing(entity.getX() + entity.getLookAngle().x * (-15),
+										world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (entity.getX() + entity.getLookAngle().x * (-15)), (int) (entity.getZ() + entity.getLookAngle().z * (-15))) + 1,
+										entity.getZ() + entity.getLookAngle().z * (-15)),
 								EntitySpawnReason.MOB_SUMMONED);
 						if (entityToSpawn != null) {
 							entityToSpawn.setYRot(entity.getYRot());
