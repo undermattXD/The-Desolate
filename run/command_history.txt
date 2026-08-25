@@ -15,3 +15,35 @@
 /execute as @s in the_desolate:wonderland run tp @s 0 64 0
 /kill @s
 /execute as @s in minecraft:overworld run tp @s 0 64 0
+/time set minecraft:night
+/summon the_desolate:ruptured_gaze
+/time set minecraft:night
+/time set 13000
+/time set day
+/time set night
+/time set minecraft:midnight
+/summon the_desolate:ruptured_gaze
+/time set minecraft:midnight
+//data get entity @e[type=LookTimer,limit=1,sort=nearest]
+/data get entity @e[type=LookTimer,limit=1,sort=nearest]
+/time set minecraft:midnight
+/data get entity @e[type=LookTimer,limit=1,sort=nearest]
+/time set day
+/time set minecraft:night
+/time set minecraft:midnight
+/data get entity @e[type=the_desolate:ruptured_gaze]
+/data get entity @e[type=the_desolate:ruptured_gaze, limit= 1]
+/time set minecraft:midnight
+/data get entity @e[type=the_desolate:ruptured_gaze, limit= 1]
+/time set minecraft:midnight
+/data get entity @e[type=the_desolate:ruptured_gaze, limit= 1]
+/time set minecraft:midnight
+/time set day
+/time set minecraft:midnight
+/gamemode survival
+/time set day
+/time set md
+/time set minecraft:midnight
+/gamemode survival
+/time set day
+/time set minecraft:midnight
