@@ -33,7 +33,7 @@ public class SpawnGazeProcedure {
 			return;
 		if (!(world instanceof Level _lvl0 && _lvl0.isBrightOutside())) {
 			if (TheDesolateModVariables.MapVariables.get(world).Has_Gaze_sapwned_tonight == false) {
-				if (Math.random() <= 1) {
+				if (Math.random() <= 0.0001) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = TheDesolateModEntities.RUPTURED_GAZE.get().spawn(_level, BlockPos.containing(entity.getX() + entity.getLookAngle().x * (-15), entity.getY(), entity.getZ() + entity.getLookAngle().z * (-15)),
 								EntitySpawnReason.MOB_SUMMONED);
