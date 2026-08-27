@@ -114,13 +114,16 @@ public class TheDesolateModVariables {
 		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
 		boolean _syncDirty = false;
 		public boolean Has_Gaze_sapwned_tonight = false;
+		public boolean firstload = true;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			Has_Gaze_sapwned_tonight = nbt.getBooleanOr("Has_Gaze_sapwned_tonight", false);
+			firstload = nbt.getBooleanOr("firstload", false);
 		}
 
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putBoolean("Has_Gaze_sapwned_tonight", Has_Gaze_sapwned_tonight);
+			nbt.putBoolean("firstload", firstload);
 			return nbt;
 		}
 

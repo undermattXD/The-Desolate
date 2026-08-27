@@ -249,6 +249,52 @@
           "src/main/java/net/mcreator/thedesolate/procedures/GazeAttatckProcedure.java"
         ]
       }
+    },
+    {
+      "name": "RuinedHouse1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruined_house_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_desolate/worldgen/structure/ruined_house_1.json",
+          "src/main/resources/data/the_desolate/worldgen/template_pool/ruined_house_1.json",
+          "src/main/resources/data/the_desolate/worldgen/structure_set/ruined_house_1.json"
+        ]
+      }
+    },
+    {
+      "name": "MansionSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thedesolate/procedures/MansionSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Mansion",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_desolate/worldgen/template_pool/mansion.json",
+          "src/main/resources/data/the_desolate/worldgen/structure/mansion.json",
+          "src/main/resources/data/the_desolate/worldgen/structure_set/mansion.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -257,6 +303,12 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "firstload",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
     }
   ],
   "sound_elements": [],
@@ -285,13 +337,13 @@
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModItems.java",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModEntityRenderers.java",
       "src/main/java/net/mcreator/thedesolate/init/TheDesolateModEntities.java",
-      "src/main/java/net/mcreator/thedesolate/TheDesolateMod.java",
-      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModModels.java",
-      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/thedesolate/network/TheDesolateModVariables.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModModels.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/thedesolate/init/TheDesolateModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/thedesolate/TheDesolateMod.java"
     ]
   },
   "foldersRoot": {
